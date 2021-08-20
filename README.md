@@ -1,4 +1,4 @@
-# What-cha-Think
+# Human Coin
 
 *Link goes here* 
 
