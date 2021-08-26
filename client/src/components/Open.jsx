@@ -3,7 +3,6 @@ import { Link, useHistory } from "react-router-dom"
 
 
 export default function Open() {
-  // const [id, setId] = useState('')
   let history = useHistory()
   const openWallet = async (props) => {
     let id

@@ -27,6 +27,7 @@ export default function Create() {
     } catch (error) {
       console.log("error")
     }
+    // history.push(`/mining/${id}`)
     history.push(`/mining/${id}`)
   }
 
