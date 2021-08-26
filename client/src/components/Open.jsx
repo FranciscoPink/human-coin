@@ -1,5 +1,4 @@
 import axios from 'axios'
-// import Create from './Create'
 import { Link } from "react-router-dom"
 
 export default function Open(props) {

@@ -17,15 +17,11 @@ export default function Create() {
       ]
     }
 
-    // REACT_APP_WALLET_API_KEY = key6l5zUSFw7ZUq3h
     await axios.post(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`, newWallet);
   };
-  // ${process.env.REACT_APP_WALLET_API_KEY}
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <button type="submit">Create Wallet</button>
-      </form>
+      <Link to="/mining"><button type="click" onClick={handleSubmit}>Create Wallet</button></Link>
 
       <div>
         <p>Already have a wallet ID?</p>
