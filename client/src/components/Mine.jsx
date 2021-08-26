@@ -1,26 +1,19 @@
 import axios from 'axios'
+import { useState } from 'react'
 
 export default function Mining() {
-  // let chipper = 0
-  // function chip() {
-  //   chips += 1
-  //   return chips
-  // }
-  // console.log(chips)
-  // let chip = () => {
-  //   let chips = 0
-  //   return chips += 100
-  // }
+  let variable = 3
+  const [count, setCount] = useState(variable)
+  let coinsMined = 3
 
   const addCoins = async () => {
-    let toAdd = 5 + 1
     let coin = {
       "records": [
         {
-          "id": "recaeUa2Cm9NmUdF6",
+          "id": "reckdyETBlMEx9tLT",
           "fields": {
-            "balance": toAdd,
-            "chips": 10
+            "balance": parseInt(coinsMined),
+            "chips": parseInt(count)
           }
         }
       ]
@@ -30,8 +23,13 @@ export default function Mining() {
 
   return (
     <div>
-      <p>f</p>
-      <button type="button">Chip</button>
+      {/* Code from react tutorial, modified for app use */}
+      <div>
+        <button onClick={() => setCount(count - 1)}>Image Contaner</button>
+        <p>Chips to earn next coin: {count}</p>
+        <p>Coins mined: {coinsMined} </p>
+        <p>Wallet ID: </p>
+      </div>
       <form onSubmit={addCoins}>
         <button type="submit">Add coins to wallet</button>
       </form>

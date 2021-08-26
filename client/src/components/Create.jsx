@@ -18,15 +18,12 @@ export default function Create() {
       newWallet).then(openWallet);
   }
   const openWallet = async () => {
-    try {
+    const response = await axios.get(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`)
+    console.log(response.data)
+    console.log(response.data.records[0].id);
 
-      const response = await axios.get(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`);
-      console.log(response.data)
-      console.log(response.data.records[0].id);
-    } catch (error) {
-      console.log("error")
-    }
   }
+
 
   return (
     <div>
