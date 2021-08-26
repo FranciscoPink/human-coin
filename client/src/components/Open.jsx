@@ -1,28 +1,15 @@
 import axios from 'axios'
 import { Link, useHistory } from "react-router-dom"
-import { useEffect, useState } from 'react';
 
 
 export default function Open() {
   // const [id, setId] = useState('')
-
-  // useEffect(() => {
-  //   const url = `https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`;
-  //   const openWallet = async () => {
-  //     const response = await axios.get(url);
-  //     setId(response.data);
-  //   };
-  //   openWallet();
-  // }, [id])
   let history = useHistory()
   const openWallet = async (props) => {
     let id
     try {
       const response = await axios.get(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`);
-      id = response.data.records[response.data.records.length - 1].id;
-      console.log(response.data.records)
-      console.log(response.data.records[response.data.records.length - 1])
-
+      id = response.data.records[response.data.records.length - 1].id
     } catch (error) {
       console.log("error")
     }

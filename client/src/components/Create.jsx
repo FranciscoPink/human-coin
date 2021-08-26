@@ -1,5 +1,6 @@
 import axios from 'axios'
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
+// import { useParams } from 'react-router'
 
 export default function Create() {
 
@@ -17,12 +18,18 @@ export default function Create() {
     await axios.post(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`,
       newWallet).then(openWallet);
   }
-  const openWallet = async () => {
-    await axios.get(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`).then((response) => {
-      console.log(response.data.records[0].fields.balance)
-      console.log(response.data.records[0].id)
-    })
+  let history = useHistory()
+  const openWallet = async (props) => {
+    let id
+    try {
+      const response = await axios.get(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`);
+      id = response.data.records[response.data.records.length - 1].id
+    } catch (error) {
+      console.log("error")
+    }
+    history.push(`/mining/${id}`)
   }
+
 
 
   return (
