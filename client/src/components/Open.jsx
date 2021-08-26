@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { Link } from "react-router-dom"
 
-export default function Open(props) {
+export default function Open() {
 
   const openWallet = async () => {
     try {
@@ -18,7 +18,7 @@ export default function Open(props) {
       <h1>Enter existing ID</h1>
       <form onSubmit={openWallet}>
         <input type="text" placeholder="ex. aBc12@" />
-        <Link to="/mining"><button type="submit">Open Wallet</button></Link>
+        <Link to="/mining"><button type="click" onClick={openWallet}>Open Wallet</button></Link>
       </form>
 
       <div>

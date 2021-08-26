@@ -1,11 +1,9 @@
 import axios from 'axios'
 import { Link } from "react-router-dom"
 
-
 export default function Create() {
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
     const newWallet = {
       "records": [
         {
@@ -16,9 +14,20 @@ export default function Create() {
         }
       ]
     }
+    await axios.post(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`,
+      newWallet).then(openWallet);
+  }
+  const openWallet = async () => {
+    try {
 
-    await axios.post(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`, newWallet);
-  };
+      const response = await axios.get(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`);
+      console.log(response.data)
+      console.log(response.data.records[0].id);
+    } catch (error) {
+      console.log("error")
+    }
+  }
+
   return (
     <div>
       <Link to="/mining"><button type="click" onClick={handleSubmit}>Create Wallet</button></Link>
