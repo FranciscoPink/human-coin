@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 
-export default function Mining() {
+export default function Mining(props) {
   let variable = 3
   const [count, setCount] = useState(variable)
   let coinsMined = 3
@@ -28,7 +28,7 @@ export default function Mining() {
         <button onClick={() => setCount(count - 1)}>Image Contaner</button>
         <p>Chips to earn next coin: {count}</p>
         <p>Coins mined: {coinsMined} </p>
-        <p>Wallet ID: </p>
+        <p>Wallet ID: {props.id}</p>
       </div>
       <form onSubmit={addCoins}>
         <button type="submit">Add coins to wallet</button>
