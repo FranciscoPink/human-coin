@@ -1,19 +1,18 @@
 import axios from 'axios'
 import { useState } from 'react'
+import { useParams } from 'react-router'
 
 export default function Mining(props) {
-  let variable = 3
-  const [count, setCount] = useState(variable)
+  const [count, setCount] = useState(10)
+  const { id } = useParams()
   let coinsMined = 3
-
   const addCoins = async () => {
     let coin = {
       "records": [
         {
-          "id": "reckdyETBlMEx9tLT",
+          "id": id,
           "fields": {
             "balance": parseInt(coinsMined),
-            "chips": parseInt(count)
           }
         }
       ]
@@ -28,7 +27,7 @@ export default function Mining(props) {
         <button onClick={() => setCount(count - 1)}>Image Contaner</button>
         <p>Chips to earn next coin: {count}</p>
         <p>Coins mined: {coinsMined} </p>
-        <p>Wallet ID: {props.id}</p>
+        <p>Wallet ID: {id}</p>
       </div>
       <form onSubmit={addCoins}>
         <button type="submit">Add coins to wallet</button>

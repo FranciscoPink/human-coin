@@ -32,7 +32,7 @@ export default function App() {
       <Route path="/contact" ><Contact /></Route>
       <Route path="/open"><Open /></Route>
       <Route path="/create"><Create /></Route>
-      <Route path="/mining"><Mining /></Route>
+      <Route path="/mining/:id"><Mining /></Route>
     </div >
   )
 
