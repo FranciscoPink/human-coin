@@ -7,10 +7,10 @@ export default function Mining() {
   //   return chips
   // }
   // console.log(chips)
-  let chip = () => {
-    let chips = 0
-    return chips += 100
-  }
+  // let chip = () => {
+  //   let chips = 0
+  //   return chips += 100
+  // }
 
   const addCoins = async () => {
     let toAdd = 5 + 1
@@ -30,7 +30,8 @@ export default function Mining() {
 
   return (
     <div>
-      <button type="button" onClick={chip}>Chip</button>
+      <p>f</p>
+      <button type="button">Chip</button>
       <form onSubmit={addCoins}>
         <button type="submit">Add coins to wallet</button>
       </form>

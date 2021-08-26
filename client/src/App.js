@@ -1,10 +1,11 @@
 import './App.css';
-import Nav from './components/Nav'
-import Create from "./components/Create"
 import { Route } from "react-router-dom"
+import Nav from './components/Nav'
 import About from "./components/About"
 import Contact from "./components/Contact"
+import Create from "./components/Create"
 import Open from "./components/Open"
+import Mining from "./components/Mine"
 
 
 
@@ -30,6 +31,7 @@ export default function App() {
       <Route path="/contact" ><Contact /></Route>
       <Route path="/open"><Open /></Route>
       <Route path="/create"><Create /></Route>
+      <Route path="/mining"><Mining /></Route>
     </div >
   )
 
