@@ -1,28 +1,31 @@
 import axios from 'axios'
-import { useEffect } from 'react';
+// import Create from './Create'
+import { Link } from "react-router-dom"
 
 export default function Open(props) {
-  // const [wallet, setWallet] = useState('')
 
-  useEffect(() => {
-    const openWallet = async () => {
-      try {
-        const response = await axios.get("https://api.airtable.com/v0/appwSNnRvlbsz27yj/Table%201?api_key=key6l5zUSFw7ZUq3h");
-        console.log(response.data);
-      } catch (error) {
-        console.log("error")
-      }
+  const openWallet = async () => {
+    try {
+      const response = await axios.get(`https://api.airtable.com/v0/appwSNnRvlbsz27yj/wallets?api_key=${process.env.REACT_APP_WALLET_API_KEY}`);
+      console.log(response.data);
+    } catch (error) {
+      console.log("error")
     }
-    openWallet();
-  }, []);
+  }
+
 
   return (
     <div>
       <h1>Enter existing ID</h1>
-      <form onSubmit="openWallet">
+      <form onSubmit={openWallet}>
         <input type="text" placeholder="ex. aBc12@" />
         <button type="submit">Open Wallet</button>
       </form>
+
+      <div>
+        <p>Don't have a wallet?</p>
+        <Link to="/create">Click here</Link>
+      </div>
     </div>
   )
 }

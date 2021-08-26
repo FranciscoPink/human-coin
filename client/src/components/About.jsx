@@ -8,7 +8,6 @@ export default function About() {
         you chip closer to finding a coin. Every coin found is added to your wallet.
         Save your wallet ID to access your wallet later.
       </p>
-
       <p>
         At the Gym, supermarket or clubbing? Tap or click away! No fancy or
         expensive equipment necessary.

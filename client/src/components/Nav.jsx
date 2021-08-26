@@ -1,7 +1,4 @@
-import { Link, Route } from "react-router-dom";
-import About from "./About"
-import Contact from "./Contact"
-
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -11,10 +8,6 @@ export default function Nav() {
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </nav>
-      <main>
-        <Route path="/about" exact><About /></Route>
-        <Route path="/contact" exact><Contact /></Route>
-      </main>
     </div>
   )
 }
