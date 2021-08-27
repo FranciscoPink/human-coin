@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div>
+    <div class="about">
       <h1>About</h1>
       <p>
         HumanCoin introduces the innovative concepts of cryptocurrencies to
