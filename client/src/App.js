@@ -24,23 +24,29 @@ export default function App() {
       <div>
         <Nav />
       </div>
-      <Route path="/" exact>
-        <div>
-          <h1>Welcome to HumanCoin!</h1>
-          <p>
-            Who needs overpowered computers and complex algorithms?
-            Human powered cryptos are here!
-          </p>
-        </div>
-        <div>
-          <Create />
-        </div>
-      </Route>
-      <Route path="/about" ><About /></Route>
-      <Route path="/contact" ><Contact /></Route>
-      <Route path="/open"><Open /></Route>
-      <Route path="/create"><Create /></Route>
-      <Route path="/mining/:id"><Mining wallets={wallets} /></Route>
+      <div className="intro">
+        <Route path="/" exact>
+          <div>
+            <h2>Welcome to HumanCoin!</h2>
+            <p className="para">
+              Who needs overpowered computers and complex algorithms?
+              Human powered cryptos are here!
+            </p>
+          </div>
+          <div>
+            <p>Create New Wallet</p>
+            <Create />
+          </div>
+        </Route>
+      </div>
+      <div className="open">
+        <Route path="/about" ><About /></Route>
+
+        <Route path="/contact" ><Contact /></Route>
+        <Route path="/open"><Open /></Route>
+        <Route path="/create"><Create /></Route>
+        <Route path="/mining/:id"><Mining wallets={wallets} /></Route>
+      </div>
     </div >
   )
 
