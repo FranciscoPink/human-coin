@@ -74,27 +74,3 @@
   margin-top: 5px;
 }
 }
-@media only screen and (max-device-width: 400px){
-  .nav {
-    height: 50px;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .link {
-    font-size: 10px;
-  }
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  margin: 20px;
-}
-
-.logo {
-  display: flex;
-  max-width: 50px;
-  margin: auto;
-  margin-top: 5px;
-}
-}
