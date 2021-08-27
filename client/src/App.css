@@ -36,12 +36,18 @@
   max-width: 800px;;
 }
 .logo {
-  display: flex;
   justify-content: flex-start;
   max-width: 50px;
   margin-top: 20px;
   margin-bottom: -70px;
   margin-left: 20px;
+}
+.walletComps {
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  border-radius: 10%;
+
 }
 
 @media (max-width: 400px){

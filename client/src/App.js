@@ -33,7 +33,7 @@ export default function App() {
               Human powered cryptos are here!
             </p>
           </div>
-          <div>
+          <div className="walletComps">
             <p>Create New Wallet</p>
             <Create />
           </div>

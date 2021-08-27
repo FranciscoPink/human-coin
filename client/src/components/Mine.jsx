@@ -37,7 +37,7 @@ export default function Mining(props) {
     <div>
       {/* Code from react tutorial, modified for app use */}
       <div>
-        <button onClick={() => count === 1 ? incrementCoins() : setCount(count - 1)}>Image Contaner</button>
+        <button onClick={() => count === 1 ? incrementCoins() : setCount(count - 1)}>Chip Away!</button>
         <p>Chips to earn next coin: {count}</p>
         <p>Coins mined: {coins} </p>
         <p>Wallet ID: {id}</p>
