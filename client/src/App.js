@@ -1,7 +1,7 @@
 import './App.css';
 import { Route } from "react-router-dom"
 import Nav from './components/Nav'
-import About from "./components/About"
+import About from "../public/About"
 import Contact from "./components/Contact"
 import Create from "./components/Create"
 import Open from "./components/Open"
