@@ -1,6 +1,6 @@
 # Human Coin
 
-*Link goes here* 
+https://human-coin.netlify.app
 
 ## Project Description
 
