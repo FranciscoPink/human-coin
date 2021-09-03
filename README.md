@@ -68,11 +68,11 @@ Airtable is returning the data for this base as follows:
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     8hrs      |    8hrs     |
 | Airtable / Github setup   |    H     |     1hrs       |      .5hr     |     .5hr    |
-| "Create Wallet" Form      |    H     |      4hrs      |     -hrs      |    -hrs     |
-| "Open Wallet" Form        |    H     |      4hrs      |     -hrs      |    -hrs     |
-| "Mining" component and Algo|    H    |      4hrs      |     -hrs      |    -hrs     |
-| CSS                       |    H     |     12hrs      |     -hrs      |    -hrs     |
-| Total                     |    H     |    27          |     -hrs     |    -hrs    |
+| "Create Wallet" Form      |    H     |      4hrs      |     5hrs      |    5hrs     |
+| "Open Wallet" Form        |    H     |      4hrs      |     4hrs      |    4hrs     |
+| "Mining" component and Algo|    H    |      4hrs      |     12hrs      |    12hrs     |
+| CSS                       |    H     |     12hrs      |     1hrs      |    1hrs     |
+| Total                     |    H     |    27          |     30.5hrs     |    30.5hrs    |
 
 ## SWOT Analysis
 
