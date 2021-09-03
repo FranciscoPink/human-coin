@@ -57,10 +57,10 @@ Airtable is returning the data for this base as follows:
 
 | Day      | Deliverable                                      | Status   |
 | -------- | ------------------------------------------------ | -------- |
-| Aug 20   | Project approval                                 | Incomplete |
-| Aug 23   | Create and Route components for GET / POST wallet| Incomplete |
-| Aug 24   | Create wallet component / clicking algo          | Incomplete |
-| Aug 25   | CSS (attempt to bootstrap, else flexbox)         | Incomplete |
+| Aug 20   | Project approval                                 | Complete |
+| Aug 23   | Create and Route components for GET / POST wallet| Complete |
+| Aug 24   | Create wallet component / clicking algo          | Complete |
+| Aug 25   | CSS (attempt to bootstrap, else flexbox)         | Complete |
 
 ## Timeframes
 
