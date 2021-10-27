@@ -1,6 +1,6 @@
 # Human Coin
 
-https://vigilant-colden-80a058.netlify.app/
+https://human-coin.netlify.app
 
 ## Project Description
 
@@ -57,10 +57,10 @@ Airtable is returning the data for this base as follows:
 
 | Day      | Deliverable                                      | Status   |
 | -------- | ------------------------------------------------ | -------- |
-| Aug 20   | Project approval                                 | Incomplete |
-| Aug 23   | Create and Route components for GET / POST wallet| Incomplete |
-| Aug 24   | Create wallet component / clicking algo          | Incomplete |
-| Aug 25   | CSS (attempt to bootstrap, else flexbox)         | Incomplete |
+| Aug 20   | Project approval                                 | Complete |
+| Aug 23   | Create and Route components for GET / POST wallet| Complete |
+| Aug 24   | Create wallet component / clicking algo          | Complete |
+| Aug 25   | CSS (attempt to bootstrap, else flexbox)         | Complete |
 
 ## Timeframes
 
@@ -68,11 +68,11 @@ Airtable is returning the data for this base as follows:
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     8hrs      |    8hrs     |
 | Airtable / Github setup   |    H     |     1hrs       |      .5hr     |     .5hr    |
-| "Create Wallet" Form      |    H     |      4hrs      |     -hrs      |    -hrs     |
-| "Open Wallet" Form        |    H     |      4hrs      |     -hrs      |    -hrs     |
-| "Mining" component and Algo|    H    |      4hrs      |     -hrs      |    -hrs     |
-| CSS                       |    H     |     12hrs      |     -hrs      |    -hrs     |
-| Total                     |    H     |    27          |     -hrs     |    -hrs    |
+| "Create Wallet" Form      |    H     |      4hrs      |     5hrs      |    5hrs     |
+| "Open Wallet" Form        |    H     |      4hrs      |     4hrs      |    4hrs     |
+| "Mining" component and Algo|    H    |      4hrs      |     12hrs      |    12hrs     |
+| CSS                       |    H     |     12hrs      |     1hrs      |    1hrs     |
+| Total                     |    H     |    27          |     30.5hrs     |    30.5hrs    |
 
 ## SWOT Analysis
 
