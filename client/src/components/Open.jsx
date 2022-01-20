@@ -19,7 +19,6 @@ export default function Open() {
   return (
     <div>
       <h1>Open Wallet</h1>
-      {/* <input type="text" placeholder="ex. aBc12@" /> */}
       <button type="click" onClick={openWallet}>Open Wallet</button>
 
       <div>
